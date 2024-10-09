@@ -3,10 +3,84 @@ import Container from "./Container.astro"
 import Topic from "./Topic.astro";
 import servicesData from './Data/services.json';
 ---
+
+
 <Container>
 <div class="relative flex flex-col items-center md:flex-row" id="services">
     <Topic title="Our Services" description="Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation">
 </div>
+<style>
+
+#services {
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+h1, h2, h3, p {
+  animation: textFadeIn 1.5s ease-out forwards;
+}
+
+div.flex-col {
+  animation: cardSlideIn 1.8s ease-out forwards;
+}
+
+a:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+img {
+  animation: imgBounce 3s ease-in-out infinite alternate;
+}
+
+a:hover img {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes imgBounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+</style>
 
 <div class="flex-row items-center py-5">
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">

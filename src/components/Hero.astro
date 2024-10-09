@@ -2,6 +2,93 @@
 import Container from "./Container.astro"
 ---
 <Container>
+    <style>
+        #hero {
+  animation: slideIn 2s ease-out forwards;
+}
+
+#hero h1 {
+  animation: textBounce 1.5s ease-out infinite alternate;
+}
+
+#hero p {
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+#hero img {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes textBounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.grid img {
+  animation: grayscalePulse 3s ease-in-out infinite;
+}
+
+@keyframes grayscalePulse {
+  0%, 100% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(0%);
+  }
+}
+
+.grid div {
+  animation: rotateIn 1.5s ease-out infinite alternate;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+    </style>
 <div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
     <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
         <div class="text-left space-y-3">

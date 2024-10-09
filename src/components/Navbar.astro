@@ -12,7 +12,86 @@ const menuitems = [
 
 const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'Request a quote' };
 ---
+<style>
 
+nav {
+  animation: fadeInDown 1.5s ease-out forwards;
+}
+
+nav img {
+  animation: logoBounce 2s ease-in-out infinite alternate;
+}
+
+nav a {
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #FF6347; /* Cambia a un color llamativo en hover */
+  transform: scale(1.1);
+}
+
+nav .px-9:hover {
+  background-color: #FF6347; /* Cambia el fondo en hover */
+  color: white;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoBounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (min-width: 1024px) {
+  nav ul li {
+    animation: menuFadeIn 1s ease forwards;
+    animation-delay: calc(0.1s * var(--order));
+  }
+
+  @keyframes menuFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+nav .block.lg:hidden .MenuIcon {
+  animation: iconPulse 1.5s infinite;
+}
+
+@keyframes iconPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+</style>
 <div class="mt-20">
 <nav class="w-full top-0 left-0 z-50 fixed bg-white">
   <Container>

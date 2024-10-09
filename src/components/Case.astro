@@ -6,7 +6,47 @@ import Topic from "./Topic.astro"
 <div class="relative flex flex-col items-center md:flex-row" id="projects">
     <Topic title="Case Studies" description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies" />
 </div>
+<style>
 
+#projects {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+div.grid div:hover {
+  background-color: #1e1e1e;
+  transition: background-color 0.3s ease;
+}
+
+div.grid div:hover .text-lime {
+  color: #00FF7F;
+  transform: translateX(5px);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+div.grid div:hover img {
+  transform: translateX(5px);
+  transition: transform 0.3s ease;
+}
+
+div.grid div .text-lime {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+div.grid div img {
+  transition: transform 0.3s ease;
+}
+
+div.grid div:hover .text-lg {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+div.grid div .text-lg {
+  transition: transform 0.2s ease;
+}
+
+
+</style>
 <div class="w-full p-12 bg-zinc-900 rounded-[45px] justify-start items-start gap-16 inline-flex text-white">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-2 divide-x-0 md:divide-x divide-y md:divide-y-0">
         <div class="flex-col items-start gap-5 inline-flex px-2 md:px-6 py-6 md:py-2">
