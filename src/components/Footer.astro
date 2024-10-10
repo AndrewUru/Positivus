@@ -1,20 +1,35 @@
 ---
 import Container from "./Container.astro"
 ---
-<footer class="bg-lime bg-fixed bg-bottom text-black">
+<footer class="bg-black text-white">
     <Container>
-    <div class="py-6">
-        <div class="flex flex-col items-center justify-between md:flex-row">
-            <div class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img class="w-auto" src="/Logo.svg" alt="Logo">
-            </div>
-            <div class="flex mt-4 md:m-0">
-                <div class="-mx-4">
-                    @ <span id="currentYear"></span> Positivus | Made with <a href="https://astro.build/" target="_blank" rel="noopener noreferrer" class="underline">Astro</a></div>
+        <div class="py-8">
+            <div class="flex flex-col items-center justify-between md:flex-row">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img class="w-auto" src="/Logo.svg" alt="Logo" />
+                </div>
+                
+                <!-- Redes Sociales -->
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="/icons/instagram.svg" alt="Instagram" class="w-6 h-6" />
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <img src="/icons/facebook.svg" alt="Facebook" class="w-6 h-6" />
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="/icons/linkedin.svg" alt="LinkedIn" class="w-6 h-6" />
+                    </a>
+                </div>
+
+                <!-- Copyright y frase trending -->
+                <div class="mt-4 md:mt-0 text-center md:text-right text-sm">
+                    <p>@ <span id="currentYear"></span> Noe & Andrés 🚀 | Hecho con 💚 usando <a href="https://astro.build/" target="_blank" rel="noopener noreferrer" class="underline hover:text-lime">Astro</a></p>
+                    <p class="mt-2">"La constancia vence lo que la dicha no alcanza" 💪 #HustleCulture</p>
                 </div>
             </div>
         </div>
-    </div>
     </Container>
 </footer>
 
