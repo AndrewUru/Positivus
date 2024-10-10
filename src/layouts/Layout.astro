@@ -6,24 +6,40 @@ import { ViewTransitions } from 'astro:transitions';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nos especializamos en gestionar tus redes sociales, automatizar procesos y crear campañas efectivas de mailing para hacer crecer tu negocio." />
+    
+    <!-- SEO Enhancements -->
+    <meta property="og:title" content="Noe & Andrés - Gestión de Redes Sociales y Automatización" />
+    <meta property="og:description" content="Te ayudamos a destacar en redes sociales como Instagram, Facebook y LinkedIn, y optimizamos tus campañas de email marketing con automatizaciones personalizadas." />
+    <meta property="og:image" content="/images/branding-social-media.jpg" />
+    <meta property="og:url" content="https://tuproyecto.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Noe & Andrés - Crecimiento Digital para tu Marca" />
+    <meta name="twitter:description" content="Llevamos tu presencia digital al siguiente nivel a través de la gestión estratégica de redes sociales y la automatización de campañas de mailing." />
+    <meta name="twitter:image" content="/images/branding-social-media.jpg" />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Positivus</title>
-    <meta
-      name="description"
-      content="A beautiful and functional landing page design created specifically for digital marketing agencies. With its clean and modern design, Positivus is the perfect template to showcase your agency's services and case studies to potential clients. Built with astro and tailwindcss"
-    />
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <ViewTransitions />
+    
+    <!-- Google Fonts with Preconnect for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <ViewTransitions />
+    <title>Noe & Andrés - Gestión de Redes y Automatización</title>
   </head>
+
   <body class="bg-white font-SpaceGrotesk">
     <Navbar />
+    
+    <!-- Main Content Placeholder -->
     <slot />
+    
     <Footer/>
   </body>
 </html>
