@@ -1,52 +1,50 @@
 {
-    "team":
-    [
-        {
-            "title": "Co-Fundador",
-            "name": "Andrés Tobío",
-            "description": "Especialista en automatización de procesos y marketing digital. Ayudando a empresas a optimizar su presencia en redes sociales y mailing.",
-            "profile": "/team/andres.png",
-            "link": "/"
-        },
-        {
-            "title": "Co-Fundadora",
-            "name": "Noelia García",
-            "description": "Gestora de redes sociales con un enfoque creativo y estratégico. Experticia en aumentar la interacción en Instagram, Facebook y LinkedIn.",
-            "profile": "/team/noe.png",
-            "link": "/"
-        }
-    ],
-    "process":
-    [
-        {
-            "index": 1,
-            "label": "Consultoría Inicial",
-            "content": "En esta primera reunión, discutimos tus objetivos de negocio, el público objetivo y las estrategias actuales. Esto nos ayuda a adaptar nuestros servicios de gestión de redes, automatización y mailing a tus necesidades específicas."
-        },
-        {
-            "index": 2,
-            "label": "Análisis y Estrategia",
-            "content": "Investigamos tu sector y analizamos las mejores prácticas para crear una estrategia que maximice tu presencia en redes sociales y mejore tus flujos de trabajo con automatizaciones."
-        },
-        {
-            "index": 3,
-            "label": "Implementación",
-            "content": "Llevamos a cabo la estrategia diseñada, gestionando las publicaciones, automatizando procesos de marketing y ejecutando campañas de mailing para conectar con tu audiencia de manera eficaz."
-        },
-        {
-            "index": 4,
-            "label": "Optimización",
-            "content": "Monitoreamos los resultados y ajustamos las campañas para asegurarnos de que estás alcanzando tus objetivos y mejorando continuamente tu rendimiento en redes sociales y campañas de email."
-        },
-        {
-            "index": 5,
-            "label": "Reportes y Análisis",
-            "content": "Te proporcionamos informes detallados de desempeño, para que puedas ver el impacto de las estrategias implementadas en las redes sociales y el email marketing."
-        },
-        {
-            "index": 6,
-            "label": "Mejora Continua",
-            "content": "Basado en los resultados obtenidos, seguimos ajustando y mejorando nuestras estrategias para asegurar que tu negocio sigue creciendo de manera eficiente en el entorno digital."
-        }
-    ]
+  "team": [
+    {
+      "title": "Co-Fundador",
+      "name": "Andrés Tobío",
+      "description": "Especialista en automatización de procesos y marketing digital. Ayudando a empresas a optimizar su presencia en redes sociales y mailing.",
+      "profile": "/team/andres.png",
+      "link": "/"
+    },
+    {
+      "title": "Co-Fundadora",
+      "name": "Noelia Bonifacio",
+      "description": "Gestora de redes sociales con un enfoque creativo y estratégico. Experticia en aumentar la interacción en Instagram, Facebook y LinkedIn.",
+      "profile": "/team/noe.png",
+      "link": "/"
+    }
+  ],
+  "process": [
+    {
+      "index": 1,
+      "label": "Consultoría Inicial",
+      "content": "En esta primera reunión, discutimos tus objetivos de negocio, el público objetivo y las estrategias actuales. Esto nos ayuda a adaptar nuestros servicios de gestión de redes, automatización y mailing a tus necesidades específicas."
+    },
+    {
+      "index": 2,
+      "label": "Análisis y Estrategia",
+      "content": "Investigamos tu sector y analizamos las mejores prácticas para crear una estrategia que maximice tu presencia en redes sociales y mejore tus flujos de trabajo con automatizaciones."
+    },
+    {
+      "index": 3,
+      "label": "Implementación",
+      "content": "Llevamos a cabo la estrategia diseñada, gestionando las publicaciones, automatizando procesos de marketing y ejecutando campañas de mailing para conectar con tu audiencia de manera eficaz."
+    },
+    {
+      "index": 4,
+      "label": "Optimización",
+      "content": "Monitoreamos los resultados y ajustamos las campañas para asegurarnos de que estás alcanzando tus objetivos y mejorando continuamente tu rendimiento en redes sociales y campañas de email."
+    },
+    {
+      "index": 5,
+      "label": "Reportes y Análisis",
+      "content": "Te proporcionamos informes detallados de desempeño, para que puedas ver el impacto de las estrategias implementadas en las redes sociales y el email marketing."
+    },
+    {
+      "index": 6,
+      "label": "Mejora Continua",
+      "content": "Basado en los resultados obtenidos, seguimos ajustando y mejorando nuestras estrategias para asegurar que tu negocio sigue creciendo de manera eficiente en el entorno digital."
+    }
+  ]
 }
