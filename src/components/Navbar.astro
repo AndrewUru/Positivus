@@ -1,130 +1,56 @@
 ---
-import Container from "./Container.astro"
+// Importaciones necesarias para la navegación
+import Container from "./Container.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   { href: '/nosotros', label: 'Sobre nosotros' },
   { href: '/#services', label: 'Servicios' },
   { href: '/precios', label: 'Precios' },
-  { href: '/articles', label: 'Blog'},
+  { href: '/articles', label: 'Blog' },
 ];
 
-const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'Request a quote' };
+const navButton = { href: 'https://github.com/manulthanura/Positivus', label: 'SOLICITA UNA ENTREVISTA' };
 ---
-<style>
 
-nav {
-  animation: fadeInDown 1.5s ease-out forwards;
-}
-
-nav img {
-  animation: logoBounce 2s ease-in-out infinite alternate;
-}
-
-nav a {
-  transition: color 0.3s, transform 0.3s;
-}
-
-nav a:hover {
-  color: #FF6347; /* Cambia a un color llamativo en hover */
-  transform: scale(1.1);
-}
-
-nav .px-9:hover {
-  background-color: #FF6347; /* Cambia el fondo en hover */
-  color: white;
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes logoBounce {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@media (min-width: 1024px) {
-  nav ul li {
-    animation: menuFadeIn 1s ease forwards;
-    animation-delay: calc(0.1s * var(--order));
-  }
-
-  @keyframes menuFadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-
-nav .block.lg:hidden .MenuIcon {
-  animation: iconPulse 1.5s infinite;
-}
-
-@keyframes iconPulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-</style>
-<div class="mt-20">
-<nav class="w-full top-0 left-0 z-50 fixed bg-white">
+<nav class="w-full top-0 left-0 z-50 fixed bg-white dark:bg-gray-900">
   <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
-    <Astronav>
-      <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/Logo.svg" class="h-8" alt="Logo" />
-        </a>
-        <div class="block lg:hidden">
-          <MenuIcon class="w-8 h-8 text-black" />
-        </div>
-      </div>
-      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0">
-          {menuitems.map((item, index) => (
-            <li>
-                <a href={item.href} class="block py-2 px-3 text-black rounded lg:bg-transparent lg:p-0">{item.label}</a>
-            </li>
-          ))}
-          <div class="lg:hidden flex items-center justify-center mt-3 gap-4">
-              <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={navButton.href} target="_blank"><h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
-              </a>
+    <header class="flex flex-col lg:flex-row justify-between items-center my-5">
+      <Astronav>
+        <div class="flex w-full lg:w-auto items-center justify-between">
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/Logo.svg" class="h-8" alt="Logo" />
+          </a>
+          <div class="block lg:hidden">
+            <MenuIcon class="w-8 h-8 text-black dark:text-white" />
           </div>
-        </ul>
-      </MenuItems>
-    </Astronav>
-    <div>
+        </div>
+        <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+          <ul class="font-medium flex flex-col p-4 lg:p-0 mt-4 border rounded-lg lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0">
+            {menuitems.map((item, index) => (
+              <li>
+                <a href={item.href} class="block py-2 px-3 text-black dark:text-white rounded lg:bg-transparent lg:p-0">{item.label}</a>
+              </li>
+            ))}
+            <div class="lg:hidden flex items-center justify-center mt-3 gap-4">
+              <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white dark:bg-gray-900 hover:bg-black text-black dark:text-white hover:text-white inline-flex" href={navButton.href} target="_blank">
+                <h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
+              </a>
+            </div>
+          </ul>
+        </MenuItems>
+      </Astronav>
       <div class="hidden lg:flex items-center gap-4">
-        <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex" href={navButton.href} target="_blank"><h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
+        <a class="px-9 py-5 rounded-2xl border border-zinc-900 bg-white dark:bg-gray-900 hover:bg-black text-black dark:text-white hover:text-white inline-flex" href={navButton.href} target="_blank">
+          <h2 class="text-center text-xl font-normal leading-7">{navButton.label}</h2>
         </a>
+        <!-- Botón de Modo Oscuro -->
+        <button id="theme-toggle" class="px-4 py-2 border border-zinc-900 bg-white dark:bg-black text-black dark:text-white rounded-lg hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-black">
+          Alternar Modo Oscuro
+        </button>
       </div>
-    </div>
-  </header>
-</Container>
+    </header>
+  </Container>
 </nav>
-</div>
+
+
