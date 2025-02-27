@@ -32,19 +32,6 @@
   background: #555;
 }
 
-/* Dark mode scrollbar */
-.dark ::-webkit-scrollbar-track {
-  background: #2b2b2b;
-}
-
-.dark ::-webkit-scrollbar-thumb {
-  background: #bbbbbb;
-}
-
-.dark ::-webkit-scrollbar-thumb:hover {
-  background: #888;
-}
-
 /* markdown style */
 .content p {
   margin: 20px 0;
@@ -64,11 +51,6 @@
   color: black;
 }
 
-/* Dark mode */
-.dark .content h2 {
-  color: white;
-}
-
 /* accordion style */
 
 .accordion__icon::before,
@@ -77,12 +59,6 @@
   position: absolute;
   background-color: black;
   transition: opacity 0.3s ease;
-}
-
-/* Dark mode */
-.dark .accordion__icon::before,
-.dark .accordion__icon::after {
-  background-color: white;
 }
 
 .accordion__icon::before {
@@ -154,50 +130,4 @@
   color: white;
   border-radius: 45px;
   border: 1px solid #b9ff66;
-}
-
-/* Dark mode */
-.dark .bubble {
-  background-color: #b9ff66;
-  color: black;
-  border: 1px solid black;
-}
-
-.bubble:after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 50px;
-  border-width: 22px;
-  border-style: solid;
-  border-color: black transparent transparent black;
-}
-
-.dark .bubble:after {
-  border-color: #b9ff66 transparent transparent #b9ff66;
-}
-
-.bubble:before {
-  content: "";
-  position: absolute;
-  bottom: -40px;
-  left: 48px;
-  border-width: 20px;
-  border-style: solid;
-  border-color: #b9ff66 transparent transparent #b9ff66;
-}
-
-/* Dark mode */
-.dark .bubble:before {
-  border-color: black transparent transparent black;
-}
-
-/* Some design */
-.bg-lime {
-  background-color: #b9ff66;
-}
-
-/* Dark mode */
-.dark .bg-lime {
-  background-color: #2b2b2b; /* Un color de fondo más oscuro para el modo oscuro */
 }
