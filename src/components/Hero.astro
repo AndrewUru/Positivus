@@ -1,127 +1,26 @@
 ---
-import Container from "./Container.astro"
+import Section from "../components/Section.astro";
+import { Image } from "astro:assets";
+import HeroIlust from "../assets/pics/hero.svg";
 ---
-<Container>
-    <style>
-        #hero {
-  animation: slideIn 2s ease-out forwards;
-}
 
-#hero h1 {
-  animation: textBounce 1.5s ease-out infinite alternate;
-}
-
-#hero p {
-  animation: fadeInUp 2s ease-out forwards;
-}
-
-
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes textBounce {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.grid img {
-  animation: grayscalePulse 3s ease-in-out infinite;
-}
-
-@keyframes grayscalePulse {
-  0%, 100% {
-    filter: grayscale(100%);
-  }
-  50% {
-    filter: grayscale(0%);
-  }
-}
-
-.grid div {
-  animation: rotateIn 1.5s ease-out infinite alternate;
-}
-
-@keyframes rotateIn {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(10deg);
-  }
-}
-
-    </style>
-<div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
+<Section id="home">
+<div class="relative flex flex-col-reverse items-center md:flex-row pt-20" id="hero">
     <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
         <div class="text-left space-y-3">
-            <h1 class="text-5xl font-medium leading-none md:text-6xl text-center md:text-left">¡Hola! Somos Noe y Andrés</h1>
-            <p class="mt-6 mb-8 text-xl font-normal leading-7 sm:mb-12 text-center md:text-left">Somos Noe y Andrés, una pareja que decidió unir sus superpoderes para ayudar a tu proyecto a destacar en un mundo donde los memes son moneda corriente y las tendencias cambian más rápido que el algoritmo de Instagram.</p>
+            <h1 class="text-4xl font-medium leading-none md:text-6xl text-center md:text-left">Gestión <br> de <br> redes</h1>
+            <p class="mt-6 mb-8 text-lg font-normal leading-7 sm:mb-12 text-center md:text-left md:pr-12">💡 ¿Qué hacemos?
+🔹 Creamos y gestionamos contenido para Instagram, TikTok, YouTube, Facebook y Telegram.
+🔹 Diseñamos estrategias para que tu marca no solo crezca, sino que conecte con su audiencia.
+🔹 Desarrollamos soluciones digitales end to end para negocios que buscan una presencia online sólida.</p>
             <div class="w-full justify-center md:justify-start items-center inline-flex">
-                <a href="https://elsaltoweb.es/contacto" class="px-8 py-5 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7">¡Hablemos!
+                <a href="https://github.com/manulthanura/Positivus" target="_blank" class="px-8 py-5 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7">Book a consultation
                 </a>
             </div>
         </div>
     </div>
     <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <img src="/Hero.svg" width="100%" alt="Hero"/>
+        <Image src={HeroIlust} alt="Hero Ilustration" loading="eager" />
     </div>
 </div>
-
-<div class="flex-row items-center">
-    <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/instagram-2-logo-svgrepo-com.svg" class="h-20 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/mailchimp-svgrepo-com.svg" class="h-20 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/zapier-svgrepo-com.svg" class="h-20 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/facebook.svg" class="h-20 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/linkedin.svg" class="h-20 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/tiktok.svg" class="h-20 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-    </div>
-</div>
-</Container>
+</Section>
