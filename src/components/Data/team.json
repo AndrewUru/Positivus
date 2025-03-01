@@ -1,16 +1,16 @@
 {
   "team": [
     {
-      "title": "Co-Fundador",
+      "title": "Fundador & Desarrollador Web",
       "name": "Andrés Tobío",
-      "description": "Desarrollador web. Convierte procesos complicados en tareas sencillas.",
-      "profile": "/team/imagen andres.webp",
+      "description": "Transforma ideas en soluciones digitales. Hace que lo complejo parezca fácil.",
+      "profile": "/team/andres.webp",
       "link": "/"
     },
     {
-      "title": "Co-Fundadora",
+      "title": "Redes Sociales & Contenido",
       "name": "Noelia Bonifacio",
-      "description": "Gestora de redes sociales y videos con un toque creativo que haría que hasta las inteligencias artificiales sientan celos",
+      "description": "Crea estrategias y contenido que conectan. Convierte marcas en historias que impactan.",
       "profile": "/team/noe.webp",
       "link": "/"
     }
@@ -19,32 +19,32 @@
     {
       "index": 1,
       "label": "Consultoría Inicial",
-      "content": "En esta primera reunión, discutimos tus objetivos de negocio, el público objetivo y las estrategias actuales. Esto nos ayuda a adaptar nuestros servicios de gestión de redes, automatización y mailing a tus necesidades específicas."
+      "content": "Nos reunimos para entender tu negocio, definir objetivos y analizar tu presencia digital actual. Esta fase nos permite personalizar cada estrategia según tus necesidades."
     },
     {
       "index": 2,
       "label": "Análisis y Estrategia",
-      "content": "Investigamos tu sector y analizamos las mejores prácticas para crear una estrategia que maximice tu presencia en redes sociales y mejore tus flujos de trabajo con automatizaciones."
+      "content": "Investigamos tu sector, estudiamos a la competencia y diseñamos una estrategia a medida para potenciar tu marca en redes y automatizar procesos clave."
     },
     {
       "index": 3,
       "label": "Implementación",
-      "content": "Llevamos a cabo la estrategia diseñada, gestionando las publicaciones, automatizando procesos de marketing y ejecutando campañas de mailing para conectar con tu audiencia de manera eficaz."
+      "content": "Ponemos en marcha la estrategia: creamos y publicamos contenido, optimizamos flujos de trabajo con automatización y ejecutamos campañas para conectar con tu audiencia."
     },
     {
       "index": 4,
-      "label": "Optimización",
-      "content": "Monitoreamos los resultados y ajustamos las campañas para asegurarnos de que estás alcanzando tus objetivos y mejorando continuamente tu rendimiento en redes sociales y campañas de email."
+      "label": "Optimización Continua",
+      "content": "Analizamos los resultados y ajustamos las tácticas para mejorar el engagement, aumentar conversiones y garantizar que tu estrategia siga evolucionando."
     },
     {
       "index": 5,
       "label": "Reportes y Análisis",
-      "content": "Te proporcionamos informes detallados de desempeño, para que puedas ver el impacto de las estrategias implementadas en las redes sociales y el email marketing."
+      "content": "Te entregamos informes detallados con métricas clave, insights y recomendaciones para que siempre estés al tanto del impacto de tu estrategia digital."
     },
     {
       "index": 6,
-      "label": "Mejora Continua",
-      "content": "Basado en los resultados obtenidos, seguimos ajustando y mejorando nuestras estrategias para asegurar que tu negocio sigue creciendo de manera eficiente en el entorno digital."
+      "label": "Crecimiento y Escalabilidad",
+      "content": "Seguimos optimizando y explorando nuevas oportunidades para que tu negocio crezca de forma sostenible en el mundo digital."
     }
   ]
 }

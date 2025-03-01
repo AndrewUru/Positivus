@@ -1,48 +1,62 @@
 ---
 // Importar los estilos globales y los componentes de navegación y pie de página
 import "../styles/global.css";
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
-import { ViewTransitions } from 'astro:transitions';
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nos especializamos en gestionar tus redes sociales, automatizar procesos y crear campañas efectivas de mailing para hacer crecer tu negocio." />
-    
-    <!-- SEO Enhancements -->
+    <meta
+      name="description"
+      content="Nos especializamos en gestionar tus redes sociales, automatizar procesos y crear campañas efectivas de mailing para hacer crecer tu negocio."
+    />
+
+    <!-- SEO y Open Graph -->
     <meta property="og:title" content="Noe & Andrés - Gestión de Redes Sociales y Automatización" />
-    <meta property="og:description" content="Te ayudamos a destacar en redes sociales como Instagram, Facebook y LinkedIn, y optimizamos tus campañas de email marketing con automatizaciones personalizadas." />
+    <meta
+      property="og:description"
+      content="Te ayudamos a destacar en redes sociales como Instagram, Facebook y LinkedIn, y optimizamos tus campañas de email marketing con automatizaciones personalizadas."
+    />
     <meta property="og:image" content="/images/branding-social-media.jpg" />
     <meta property="og:url" content="https://tuproyecto.com" />
+    
+    <!-- Meta etiquetas para Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Noe & Andrés - Crecimiento Digital para tu Marca" />
-    <meta name="twitter:description" content="Mejoramos tu presencia Web través de la gestión estratégica de redes sociales y la automatización de campañas de mailing." />
+    <meta
+      name="twitter:description"
+      content="Mejoramos tu presencia Web a través de la gestión estratégica de redes sociales y la automatización de campañas de mailing."
+    />
     <meta name="twitter:image" content="/images/branding-social-media.jpg" />
 
+    <!-- Icono del sitio -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    
-    <!-- Google Fonts with Preconnect for better performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts Optimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
     <ViewTransitions />
-    <title>Noe & Andrés - Gestión de Redes y Automatización</title>
+    <title>Gestión de Redes y Automatización</title>
   </head>
 
   <body class="bg-white dark:bg-gray-900 font-SpaceGrotesk text-black dark:text-white">
-    <!-- Aquí se incluirá el Navbar con el botón de alternancia de modo oscuro -->
+    <!-- Navbar con modo oscuro -->
     <Navbar />
 
-    <!-- Aquí se incluye el contenido dinámico de las páginas -->
+    <!-- Contenido dinámico de la página -->
     <slot />
 
     <!-- Pie de página -->
-    <Footer/>
+    <Footer />
   </body>
 </html>

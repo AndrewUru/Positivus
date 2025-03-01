@@ -1,56 +1,56 @@
 [
-    {
-        "id": 1,
-        "name1": "Gestión de",
-        "name2": "Instagram",
-        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-        "arrow": "./services/ag.svg",
-        "link": "./",
-        "image": "./services/01.svg"
-    },
-    {
-        "id": 2,
-        "name1": "Gestión de",
-        "name2": "Facebook",
-        "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-        "arrow": "./services/ag.svg",
-        "link": "./",
-        "image": "./services/02.svg"
-    },
-    {
-        "id": 3,
-        "name1": "Automatización de",
-        "name2": "Procesos",
-        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-        "arrow": "./services/aw.svg",
-        "link": "./",
-        "image": "./services/03.svg"
-    },
-    {
-        "id": 4,
-        "name1": "Marketing",
-        "name2": "por Email",
-        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-        "arrow": "./services/ag.svg",
-        "link": "./",
-        "image": "./services/04.svg"
-    },
-    {
-        "id": 5,
-        "name1": "Creación de",
-        "name2": "Contenido",
-        "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-        "arrow": "./services/ag.svg",
-        "link": "./",
-        "image": "./services/05.svg"
-    },
-    {
-        "id": 6,
-        "name1": "Análisis y",
-        "name2": "Métricas",
-        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-        "arrow": "./services/aw.svg",
-        "link": "./",
-        "image": "./services/06.svg"
-    }
+  {
+    "id": 1,
+    "name1": "Gestión de",
+    "name2": "Instagram",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "arrow": "./services/ag.svg",
+    "link": "./",
+    "image": "./services/01.svg"
+  },
+  {
+    "id": 2,
+    "name1": "Gestión de",
+    "name2": "Facebook",
+    "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "arrow": "./services/ag.svg",
+    "link": "./",
+    "image": "./services/02.svg"
+  },
+  {
+    "id": 3,
+    "name1": "Automatización de",
+    "name2": "Procesos",
+    "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "./services/aw.svg",
+    "link": "./",
+    "image": "./services/03.svg"
+  },
+  {
+    "id": 4,
+    "name1": "Marketing",
+    "name2": "por Email",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "arrow": "./services/ag.svg",
+    "link": "./",
+    "image": "./services/04.svg"
+  },
+  {
+    "id": 5,
+    "name1": "Creación de",
+    "name2": "Contenido",
+    "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "arrow": "./services/ag.svg",
+    "link": "./",
+    "image": "./services/05.svg"
+  },
+  {
+    "id": 6,
+    "name1": "Análisis y",
+    "name2": "Métricas",
+    "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "./services/aw.svg",
+    "link": "./",
+    "image": "./services/06.svg"
+  }
 ]
